@@ -1,0 +1,34 @@
+.card {
+  position: relative;
+}
+.card-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transition: all 1s;
+}
+
+.card-side--back {
+  transform: rotateY(180deg);
+}
+
+.animation1.card-side--back {
+  transform: rotateY(0deg);
+}
+
+.animation1.card-side--front {
+  transform: rotateY(180deg);
+}
+
+.animation2.card-side--back {
+  transform: rotateY(180deg);
+}
+
+.animation2.card-side--front {
+  transform: rotateY(0deg);
+}
+
+.color {
+  background-color: "red" !important;
+}
